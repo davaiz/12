@@ -15,10 +15,10 @@ class DimQ
         DimQ<L, M, T, I, Q, N, J>  operator - () const {
             return DimQ<L, M, T, I, Q, N, J>(-x);
         }
-        DimQ<L, M, T, I, Q, N, J> operator - (const DimQ &a) const {
+        DimQ<L, M, T, I, Q, N, J> operator - (const DimQ<L, M, T, I, Q, N, J> &a) const {
             return DimQ<L, M, T, I, Q, N, J>(x - a.x);
         }    
-        DimQ<L, M, T, I, Q, N, J> operator + (const DimQ &a) const {
+        DimQ<L, M, T, I, Q, N, J> operator + (const DimQ<L, M, T, I, Q, N, J> &a) const {
             return DimQ<L, M, T, I, Q, N, J>(x+a.x);    
             
         }
